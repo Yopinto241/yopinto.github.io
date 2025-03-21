@@ -1,0 +1,165 @@
+/* Mobile-first, vibrant design */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2D2D2D;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #00C4B4;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #FFD700;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    color: #FFD700;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    color: #00C4B4;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .skills-grid, .services-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-grid li {
+    background-color: #FFD700;
+    color: #2D2D2D;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-grid div {
+    background-color: #3C3C3C;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  #quiz-container {
+    background-color: #3C3C3C;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  #options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  #options label {
+    background-color: #FFD700;
+    color: #2D2D2D;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #FFD700;
+    color: #2D2D2D;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e6c200;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border: 2px solid #00C4B4;
+    background-color: #3C3C3C;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .form-hidden {
+    display: none;
+  }
+  
+  a {
+    color: #FFD700;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  footer {
+    background-color: #00C4B4;
+    text-align: center;
+    padding: 1rem;
+    color: #2D2D2D;
+  }
+  
+  /* Desktop adjustments */
+  @media (min-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  }
